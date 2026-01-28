@@ -103,7 +103,7 @@ export default function StudentDashboard() {
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold text-green-600">0</div>
-              <p className="text-xs text-gray-500 mt-1">services feedback form</p>
+              <p className="text-xs text-gray-500 mt-1">out of 8 teachers</p>
             </CardContent>
           </Card>
           <Card className="bg-white border-amber-100">
