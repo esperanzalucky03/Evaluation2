@@ -111,7 +111,7 @@ export default function StudentDashboard() {
               <CardTitle className="text-sm font-medium text-gray-600">Days Remaining</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold text-amber-600">12</div>
+              <div className="text-3xl font-bold text-amber-600">30</div>
               <p className="text-xs text-gray-500 mt-1">to complete all evaluations</p>
             </CardContent>
           </Card>
