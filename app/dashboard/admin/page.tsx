@@ -79,13 +79,15 @@ export default function AdminDashboard() {
                 User Management
               </Button>
             </Link>
-            <Button
-              variant="ghost"
-              className="w-full justify-start text-slate-200 hover:bg-slate-800 hover:text-emerald-400"
-            >
-              <Settings className="w-4 h-4 mr-3" />
-              Settings
-            </Button>
+            <Link href="/admin/settings">
+              <Button
+                variant="ghost"
+                className="w-full justify-start text-slate-200 hover:bg-slate-800 hover:text-emerald-400"
+              >
+                <Settings className="w-4 h-4 mr-3" />
+                Settings
+              </Button>
+            </Link>
           </div>
 
           <div className="pt-6 border-t border-slate-800">
