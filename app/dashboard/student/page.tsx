@@ -102,7 +102,7 @@ export default function StudentDashboard() {
               <CardTitle className="text-sm font-medium text-gray-600">Feedback Submitted</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold text-green-600">1</div>
+              <div className="text-3xl font-bold text-green-600">0</div>
               <p className="text-xs text-gray-500 mt-1">services feedback form</p>
             </CardContent>
           </Card>
