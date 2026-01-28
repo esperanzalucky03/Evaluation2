@@ -93,7 +93,7 @@ export default function StudentDashboard() {
               <CardTitle className="text-sm font-medium text-gray-600">Evaluations Completed</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold text-blue-600">2</div>
+              <div className="text-3xl font-bold text-blue-600"></div>
               <p className="text-xs text-gray-500 mt-1">out of 5 teachers</p>
             </CardContent>
           </Card>
