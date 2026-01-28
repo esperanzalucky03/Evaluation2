@@ -156,7 +156,7 @@ export default function AdminSettingsPage() {
           Back to Dashboard
         </Link>
 
-        <h1 className="text-3xl font-bold mb-6">User & Teacher Management</h1>
+        <h1 className="text-3xl font-bold mb-6">Teacher Management</h1>
 
         <div className="grid gap-6">
           <Card>
