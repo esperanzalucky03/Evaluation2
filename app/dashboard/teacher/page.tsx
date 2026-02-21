@@ -103,10 +103,17 @@ export default function TeacherDashboard() {
             <h1 className="text-4xl font-bold text-amber-900 mb-2">Teacher Portal</h1>
             <p className="text-amber-700">Welcome, {userEmail}</p>
           </div>
-          <Button variant="outline" onClick={handleLogout} className="flex items-center gap-2 bg-transparent">
-            <LogOut className="w-4 h-4" />
-            Logout
-          </Button>
+          <div className="flex gap-2">
+            <Link href="/teacher/account-settings">
+              <Button variant="outline" className="flex items-center gap-2 bg-transparent">
+                Settings
+              </Button>
+            </Link>
+            <Button variant="outline" onClick={handleLogout} className="flex items-center gap-2 bg-transparent">
+              <LogOut className="w-4 h-4" />
+              Logout
+            </Button>
+          </div>
         </div>
 
         {/* Main Grid */}

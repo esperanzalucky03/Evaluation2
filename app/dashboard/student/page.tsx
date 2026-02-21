@@ -63,17 +63,24 @@ export default function StudentDashboard() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-blue-50">
-      {/* Navigation Header */}
+        {/* Navigation Header */}
       <div className="border-b border-blue-100 bg-white/80 backdrop-blur-sm sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <BookOpen className="w-6 h-6 text-blue-600" />
             <h1 className="text-xl font-bold text-gray-900">School Evaluation Hub</h1>
           </div>
-          <Button variant="ghost" onClick={handleLogout} className="gap-2 text-gray-700 hover:bg-blue-50">
-            <LogOut className="w-4 h-4" />
-            Logout
-          </Button>
+          <div className="flex items-center gap-2">
+            <Link href="/student/account-settings">
+              <Button variant="ghost" className="gap-2 text-gray-700 hover:bg-blue-50">
+                Settings
+              </Button>
+            </Link>
+            <Button variant="ghost" onClick={handleLogout} className="gap-2 text-gray-700 hover:bg-blue-50">
+              <LogOut className="w-4 h-4" />
+              Logout
+            </Button>
+          </div>
         </div>
       </div>
 
