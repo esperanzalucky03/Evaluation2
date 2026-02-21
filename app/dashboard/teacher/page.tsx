@@ -117,9 +117,9 @@ export default function TeacherDashboard() {
         </div>
 
         {/* Main Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+        <div className="grid md:grid-cols-3 gap-6 mb-8">
           {/* View Evaluations */}
-          <Card className="hover:shadow-lg transition-shadow border-amber-200 md:col-span-2">
+          <Card className="hover:shadow-lg transition-shadow border-amber-200">
             <CardHeader>
               <div className="flex items-center gap-2 mb-2">
                 <TrendingUp className="w-5 h-5 text-amber-600" />
