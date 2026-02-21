@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
-import { BookOpen, MessageSquare, Clock, CheckCircle2, LogOut, ArrowRight, FileText } from "lucide-react"
+import { BookOpen, MessageSquare, Clock, CheckCircle2, LogOut, ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 const teachers = [
@@ -125,7 +125,7 @@ export default function StudentDashboard() {
         </div>
 
         {/* Main Actions */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Teacher Evaluations */}
           <Link href="/evaluate">
             <Card className="cursor-pointer hover:shadow-xl hover:border-blue-300 transition-all duration-300 h-full bg-white border-2 border-blue-100">
@@ -193,38 +193,6 @@ export default function StudentDashboard() {
               </CardContent>
             </Card>
           </Link>
-
-          {/* Reports */}
-          <Card className="bg-white border-2 border-emerald-100 h-full">
-            <CardHeader>
-              <div className="flex items-start justify-between">
-                <div className="flex-1">
-                  <CardTitle className="text-xl mb-2">Reports</CardTitle>
-                  <CardDescription className="text-sm">
-                    View and download your evaluation and feedback reports
-                  </CardDescription>
-                </div>
-                <div className="bg-emerald-100 p-3 rounded-lg shrink-0">
-                  <FileText className="w-5 h-5 text-emerald-600" />
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                <div>
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm font-medium text-gray-700">Available</span>
-                    <span className="text-sm font-semibold text-emerald-600">0</span>
-                  </div>
-                  <p className="text-xs text-gray-500">Reports will appear once evaluations are completed</p>
-                </div>
-                <Button className="w-full bg-emerald-600 hover:bg-emerald-700 text-white gap-2 text-sm" disabled>
-                  Download Reports
-                  <ArrowRight className="w-4 h-4" />
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
         </div>
 
         {/* Information Section */}
